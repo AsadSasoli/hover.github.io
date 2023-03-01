@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;500;600&display=swap');
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: turquoise;
+    }
+    .card{
+        width: 280px;
+        height: 200px;
+        background: white;
+        transition: all 0.3s;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        border-radius: 10px;
+    }
+    .card:hover{
+        height: 300px;
+    }
+    .imgbox{
+        width: 195px;
+        height: 200px;
+        margin: auto;
+        position: relative;
+        transform: translateY(-50px);
+        z-index: 99;
+    }
+    .imgbox img{
+        width: 195px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .content{
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        padding: 0px 25px;
+        transition: all 0.3s;
+        color: rgb(19, 102, 94);
+        font-family: 'Josefin Sans', sans-serif;
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    .card:hover > .content{
+        transform: translateY(-80px);
+        opacity: 1;
+    }
+</style>
+<body>
+    <div class="card">
+        <div class="imgbox">
+            <img src="IMG/photo-1568405336404-1fefdca58699.jpg">
+        </div>
+        <div class="content">
+            <h2>Hover Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facere, adipisci deleniti iusto sit,  </p>
+        </div>
+    </div>
+</body>
+</html>
